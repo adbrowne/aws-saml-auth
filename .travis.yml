@@ -1,4 +1,10 @@
 language: go
-
 go:
-  - "1.10.2"
+- 1.10.2
+deploy:
+  provider: releases
+  api_key:
+    secure: xOcX5kKD1QnlB1AskWkxK4DiuZNNOcVInTZ8OoEen1qNACED4RcZLI19Qf1BLmb25IYj52ud66mbTCfx7OrzgUOjwyFc6CeYllLYkiAzCdeM51KUvnRgF9nvnczf4RQjYSRrb7rjQYjtiqF7azX++Ij4A7d8cjUi3LV2vmSq9laJGcdbN5oGvBIl/SY48pGKeOcFeoG0h32y/GDs2n+Cgh0NI4LIS1iOJARdMUoFKoJofJOFPDrGRxSr8SBFcqAkEozVgcBWc0aCXHa6YrOec0M/bKiMDfQjK+Wr5xh/9ogl+NArmstOwNWHkf1UPw9cKfG1vXY49s12H6Fnfp/KMViPi+h6ZWd/MhO3VYFef86veko09SqJbjWV9yAPq08PX1PXSQwQefOmtSE+vUJFXhD0J/YjdO7HlGkvamKKCgSAZtz8Tl2tZ1/3nFox7cChZTgNazZdAvEV3j4N9kJ7yBQUD/Ke3verYY8UAw17VaPdn7eU4FdOerVfM5scQ+tJjYz/yedw/ngiE2Nrtv2NakrLHAaCrmaCpg1AQFCZM80Gyu1x8x2jG0cOCmpkftJwgUkC39U05QyKAGsLEk7L8IjrM7vZFebUCqfrreij0yUSeSdY4ILNqVIiuwGsgRDE2aBHsTtSIt2DjbyMC0gcikJKVlpLW4O2tBtgujFduIY=
+  file: aws-saml-auth
+  on:
+    repo: adbrowne/aws-saml-auth
