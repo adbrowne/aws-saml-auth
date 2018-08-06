@@ -13,6 +13,4 @@ deploy:
   file: aws-saml-auth
   on:
     repo: adbrowne/aws-saml-auth
-    branches:
-      only:
-        - master
+    all_branches: true
