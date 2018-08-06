@@ -1,12 +1,14 @@
 language: go
 go:
 - 1.10.2
+build:
+  - go build
 before_deploy:
-      # Set up git user name and tag this commit
-      - git config --local user.name "adbrowne"
-      - git config --local user.email "brownie@brownie.com.au"
-      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-      - ls -a
+  # Set up git user name and tag this commit
+  - git config --local user.name "adbrowne"
+  - git config --local user.email "brownie@brownie.com.au"
+  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+  - ls -a
 deploy:
   provider: releases
   api_key:
